@@ -29,6 +29,8 @@ jobs:
 
       - name: Entrenar el modelo
         run: python train.py
+        env:
+          MODEL_AUTHOR: ${{ secrets.MODEL_AUTHOR }}
 
       - name: Guardar modelo entrenado
         uses: actions/upload-artifact@v4
