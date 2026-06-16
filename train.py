@@ -10,4 +10,4 @@ model = DecisionTreeClassifier()
 model.fit(X, y)
 
 joblib.dump(model, "model/model.pkl")
-print("Modelo guardado en model/model.pkl")
+print("Modelo entrenado y guardado en model/model.pkl")
